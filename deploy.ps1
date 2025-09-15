@@ -5,6 +5,9 @@ npm run build
 Write-Host "Copying files..." -ForegroundColor Green
 Copy-Item -Path "dist\*" -Destination "." -Recurse -Force
 
+Write-Host "Creating .nojekyll file..." -ForegroundColor Green
+New-Item -Path ".nojekyll" -ItemType File -Force
+
 Write-Host "Adding to git..." -ForegroundColor Green
 git add .
 
