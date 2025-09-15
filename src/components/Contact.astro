@@ -11,11 +11,28 @@
                 <div class="audit-offer">
                     <div class="audit-badge">
                         <i class="fas fa-gift"></i>
-                        <span>OFFRE LIMITÉE</span>
+                        <span>GRATUIT</span>
                     </div>
-                    <h3>Audit Gratuit (valeur 500€)</h3>
-                    <p>Analyse complète + plan d'action personnalisé en 24h</p>
+                    <h3>Audit Gratuit (valeur 200€)</h3>
+                    <p>Analyse complète + plan d'action personnalisé en 48h</p>
                 </div>
+
+                <div class="calendly-cta">
+                    <div class="calendly-content">
+                        <div class="calendly-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="calendly-text">
+                            <h3>Préférez un appel direct ?</h3>
+                            <p>Réservez un créneau de 30 minutes pour discuter de votre projet</p>
+                        </div>
+                    </div>
+                    <a href="https://calendly.com/autoflowai" target="_blank" class="btn btn-calendly">
+                        <i class="fas fa-video"></i>
+                        Réserver un appel
+                    </a>
+                </div>
+
                 <div class="contact-features">
                     <div class="contact-feature">
                         <i class="fas fa-calendar-check"></i>
@@ -27,8 +44,8 @@
                     <div class="contact-feature">
                         <i class="fas fa-rocket"></i>
                         <div>
-                            <h4>Démarrage rapide</h4>
-                            <p>Premiers résultats en 2 semaines</p>
+                    <h4>Démarrage rapide</h4>
+                    <p>Premiers résultats en 1-2 semaines</p>
                         </div>
                     </div>
                     <div class="contact-feature">
@@ -47,17 +64,9 @@
                             <i class="fas fa-envelope"></i>
                             <span>contact@autoflowai.fr</span>
                         </a>
-                        <a href="tel:+33123456789" class="method">
-                            <i class="fas fa-phone"></i>
-                            <span>+33 1 23 45 67 89</span>
-                        </a>
                         <a href="#" class="method">
                             <i class="fab fa-linkedin"></i>
                             <span>LinkedIn</span>
-                        </a>
-                        <a href="#" class="method">
-                            <i class="fab fa-calendly"></i>
-                            <span>Calendly</span>
                         </a>
                     </div>
                 </div>
@@ -289,19 +298,28 @@
                     <div class="footer-column">
                         <h4>Services</h4>
                         <ul>
-                            <li><a href="#services">Workflows IA</a></li>
-                            <li><a href="#services">Automatisation</a></li>
-                            <li><a href="#services">Analytics</a></li>
-                            <li><a href="#services">Consulting</a></li>
+                            <li><a href="#services">Workflows IA Intelligents</a></li>
+                            <li><a href="#services">Automatisation Complète</a></li>
+                            <li><a href="#services">Analytics & Reporting</a></li>
+                            <li><a href="#contact">Audit Gratuit</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Solutions</h4>
+                        <ul>
+                            <li><a href="#portfolio">Chatbots IA</a></li>
+                            <li><a href="#portfolio">Générateur de Devis</a></li>
+                            <li><a href="#portfolio">Agent Téléphonique</a></li>
+                            <li><a href="#portfolio">Marketing Intelligence</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
                         <h4>Ressources</h4>
                         <ul>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Tutoriels</a></li>
-                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#portfolio">FAQ</a></li>
+                            <li><a href="#process">Mon Processus</a></li>
+                            <li><a href="#portfolio">Cas d'usage</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                     <div class="footer-column">
@@ -411,6 +429,100 @@
         position: relative;
         z-index: 2;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .calendly-cta {
+        background: white;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: var(--shadow-medium);
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .calendly-cta::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--gradient-1);
+    }
+
+    .calendly-content {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .calendly-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--gradient-1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+    }
+
+    .calendly-text h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+    }
+
+    .calendly-text p {
+        color: var(--text-light);
+        margin: 0;
+        font-size: 0.95rem;
+    }
+
+    .btn-calendly {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem 2rem;
+        background: var(--gradient-1);
+        color: white;
+        text-decoration: none;
+        border-radius: 0.75rem;
+        font-weight: 700;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .btn-calendly::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s ease;
+    }
+
+    .btn-calendly:hover::before {
+        left: 100%;
+    }
+
+    .btn-calendly:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
+    }
+
+    .btn-calendly i {
+        font-size: 1.2rem;
     }
 
     .contact-features {
@@ -691,7 +803,7 @@
 
     .footer-content {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 3fr;
         gap: 3rem;
         margin-bottom: 2rem;
     }
@@ -741,7 +853,7 @@
 
     .footer-links {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 2rem;
     }
 
@@ -832,6 +944,25 @@
         }
 
         .footer-links {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .footer-links {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .footer-links {
             grid-template-columns: 1fr;
             gap: 1.5rem;
         }
@@ -857,6 +988,32 @@
 
         .audit-offer p {
             font-size: 0.9rem;
+        }
+
+        .calendly-cta {
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .calendly-content {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+
+        .calendly-text h3 {
+            font-size: 1.1rem;
+        }
+
+        .calendly-text p {
+            font-size: 0.9rem;
+        }
+
+        .btn-calendly {
+            width: 100%;
+            justify-content: center;
+            padding: 0.875rem 1.5rem;
+            font-size: 1rem;
         }
 
         .form-header h3 {
