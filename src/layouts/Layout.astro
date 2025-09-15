@@ -1,0 +1,301 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="AutoFlowAI - Expert freelance spécialisé en automatisation IA avec n8n. Création de chatbots intelligents, workflows automatiques, génération de devis et agents téléphoniques IA. Transformez vos processus métier." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- SEO Meta Tags -->
+		<meta name="keywords" content="n8n expert, automatisation IA, chatbot freelance, workflows automatiques, génération devis, agent téléphonique IA, AutoFlowAI, consultant n8n, automatisation processus, intelligence artificielle, OpenAI, Claude AI">
+		<meta name="author" content="AutoFlowAI - Expert Freelance Automatisation IA">
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="https://autoflowai.fr">
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://autoflowai.fr">
+		<meta property="og:title" content={title}>
+		<meta property="og:description" content="AutoFlowAI - Expert freelance en automatisation IA avec n8n. Chatbots intelligents, workflows automatiques, génération de devis. Transformez vos processus métier avec l'IA.">
+		<meta property="og:site_name" content="AutoFlowAI">
+		<meta property="og:locale" content="fr_FR">
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="https://autoflowai.fr">
+		<meta name="twitter:title" content={title}>
+		<meta name="twitter:description" content="AutoFlowAI - Expert freelance en automatisation IA avec n8n. Chatbots intelligents, workflows automatiques, génération de devis.">
+		
+		<!-- Schema.org structured data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "ProfessionalService",
+			"name": "AutoFlowAI",
+			"description": "Expert freelance spécialisé en automatisation IA avec n8n. Création de chatbots intelligents, workflows automatiques, génération de devis et agents téléphoniques IA.",
+			"url": "https://autoflowai.fr",
+			"telephone": "+33123456789",
+			"email": "contact@autoflowai.fr",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Paris",
+				"addressCountry": "FR"
+			},
+			"serviceType": ["Automatisation IA", "Workflows n8n", "Chatbots", "Génération de devis"],
+			"areaServed": "France",
+			"founder": {
+				"@type": "Person",
+				"name": "Expert AutoFlowAI"
+			}
+		}
+		</script>
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	</head>
+	<body>
+		<slot />
+		<style is:global>
+			:root {
+				--primary-color: #3b82f6;
+				--primary-dark: #2563eb;
+				--secondary-color: #8b5cf6;
+				--accent-color: #06b6d4;
+				--text-color: #1f2937;
+				--text-light: #6b7280;
+				--bg-color: #ffffff;
+				--bg-secondary: #f8fafc;
+				--border-color: #e5e7eb;
+				--gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				--gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+				--gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+				--shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+				--shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+				--shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+				
+				/* Typography */
+				--font-heading: 'Outfit', sans-serif;
+				--font-body: 'Inter', sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-family: var(--font-body);
+				scroll-behavior: smooth;
+			}
+
+			body {
+				color: var(--text-color);
+				background-color: var(--bg-color);
+				line-height: 1.6;
+				overflow-x: hidden;
+			}
+
+			/* Typography Hierarchy */
+			h1, h2, h3, h4, h5, h6 {
+				font-family: var(--font-heading);
+				font-weight: 700;
+				line-height: 1.2;
+				margin-bottom: 1rem;
+			}
+
+			h1 {
+				font-size: 3.5rem;
+				font-weight: 800;
+				letter-spacing: -0.02em;
+			}
+
+			h2 {
+				font-size: 2.5rem;
+				font-weight: 700;
+				letter-spacing: -0.01em;
+			}
+
+			h3 {
+				font-size: 1.75rem;
+				font-weight: 600;
+			}
+
+			h4 {
+				font-size: 1.25rem;
+				font-weight: 600;
+			}
+
+			h5, h6 {
+				font-size: 1.125rem;
+				font-weight: 600;
+			}
+
+			p, span, div, a, li, label, input, textarea, select {
+				font-family: var(--font-body);
+			}
+
+			.section-title {
+				font-family: var(--font-heading);
+				font-weight: 700;
+			}
+
+			.section-description {
+				font-family: var(--font-body);
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			.section-header {
+				text-align: center;
+				margin-bottom: 4rem;
+			}
+
+			.section-title {
+				font-size: 2.5rem;
+				font-weight: 800;
+				margin-bottom: 1rem;
+				background: var(--gradient-1);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.section-description {
+				font-size: 1.125rem;
+				color: var(--text-light);
+				max-width: 600px;
+				margin: 0 auto;
+			}
+
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				padding: 0.75rem 1.5rem;
+				border: none;
+				border-radius: 0.5rem;
+				font-weight: 600;
+				text-decoration: none;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.btn-primary {
+				background: var(--gradient-1);
+				color: white;
+				box-shadow: var(--shadow-medium);
+			}
+
+			.btn-primary:hover {
+				transform: translateY(-2px);
+				box-shadow: var(--shadow-large);
+			}
+
+			.btn-secondary {
+				background: transparent;
+				color: var(--primary-color);
+				border: 2px solid var(--primary-color);
+			}
+
+			.btn-secondary:hover {
+				background: var(--primary-color);
+				color: white;
+			}
+
+			.gradient-text {
+				background: var(--gradient-1);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			/* Animations */
+			@keyframes fadeInUp {
+				from {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			@keyframes float {
+				0%, 100% {
+					transform: translateY(0px) rotate(0deg);
+				}
+				25% {
+					transform: translateY(-15px) rotate(1deg);
+				}
+				50% {
+					transform: translateY(-25px) rotate(0deg);
+				}
+				75% {
+					transform: translateY(-15px) rotate(-1deg);
+				}
+			}
+
+			@keyframes pulse {
+				0%, 100% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0.5;
+				}
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.container {
+					padding: 0 1rem;
+				}
+				
+				.section-title {
+					font-size: 2rem;
+				}
+				
+				.section-header {
+					margin-bottom: 2rem;
+				}
+
+				/* Responsive Typography */
+				h1 {
+					font-size: 2.5rem;
+				}
+
+				h2 {
+					font-size: 2rem;
+				}
+
+				h3 {
+					font-size: 1.5rem;
+				}
+
+				h4 {
+					font-size: 1.125rem;
+				}
+			}
+		</style>
+	</body>
+</html>

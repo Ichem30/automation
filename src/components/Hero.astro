@@ -1,0 +1,433 @@
+---
+---
+
+<section id="hero" class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-robot"></i>
+                <span>Expert n8n</span>
+            </div>
+            <h1 class="hero-title">
+                Transformez vos processus avec l'<span class="gradient-text">IA</span> et l'automatisation
+            </h1>
+            <p class="hero-description">
+                Libérez le potentiel de votre entreprise grâce à des workflows IA sur mesure avec n8n. 
+                Automatisez, optimisez, et concentrez-vous sur ce qui compte vraiment.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Démarrez votre projet en 24h
+                </a>
+                <a href="#portfolio" class="btn btn-secondary">
+                    <i class="fas fa-play"></i>
+                    Voir mes réalisations
+                </a>
+            </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">80%</span>
+                        <span class="stat-label">Tâches automatisées</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Première démo</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Satisfaction garantie</span>
+                    </div>
+                </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <i class="fas fa-brain"></i>
+                <span>Automatisation IA</span>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-sync-alt"></i>
+                <span>Processus Optimisés</span>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-chart-line"></i>
+                <span>ROI Garanti</span>
+            </div>
+            <div class="workflow-diagram">
+                <div class="node node-start">
+                    <i class="fas fa-play"></i>
+                </div>
+                <div class="connection"></div>
+                <div class="node node-ai">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="connection"></div>
+                <div class="node node-action">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="connection"></div>
+                <div class="node node-end">
+                    <i class="fas fa-check"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 80px 0 60px;
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e2e8f0' fill-opacity='0.4'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        opacity: 0.3;
+    }
+
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-content {
+        animation: fadeInUp 1s ease-out;
+    }
+
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(59, 130, 246, 0.1);
+        color: var(--primary-color);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        border: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+    }
+
+    .hero-description {
+        font-size: 1.25rem;
+        color: var(--text-light);
+        margin-bottom: 2rem;
+        line-height: 1.6;
+    }
+
+    .hero-buttons {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .stat {
+        text-align: center;
+    }
+
+    .stat-number {
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--primary-color);
+        margin-bottom: 0.25rem;
+    }
+
+    .stat-label {
+        font-size: 0.875rem;
+        color: var(--text-light);
+        font-weight: 500;
+    }
+
+    .hero-visual {
+        position: relative;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .floating-card {
+        position: absolute;
+        background: white;
+        padding: 1rem 1.5rem;
+        border-radius: 1rem;
+        box-shadow: var(--shadow-large);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: 600;
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+        backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+    }
+
+    .floating-card:hover {
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    .floating-card i {
+        font-size: 1.25rem;
+    }
+
+    .card-1 {
+        top: 10%;
+        left: 10%;
+        animation: float 4s ease-in-out infinite;
+    }
+
+    .card-1 i {
+        color: #8b5cf6;
+        animation: iconPulse 2s ease-in-out infinite;
+    }
+
+    .card-2 {
+        bottom: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: floatCenter 4s ease-in-out infinite 1.5s;
+    }
+
+    .card-2 i {
+        color: #06b6d4;
+        animation: iconPulse 2s ease-in-out infinite 0.5s;
+    }
+
+    .card-3 {
+        top: 10%;
+        right: 10%;
+        animation: float 4s ease-in-out infinite 3s;
+    }
+
+    .card-3 i {
+        color: #10b981;
+        animation: iconPulse 2s ease-in-out infinite 1s;
+    }
+
+    .workflow-diagram {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .node {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: var(--shadow-medium);
+        border: 3px solid var(--primary-color);
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        animation: pulse 2s ease-in-out infinite;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .node::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(45deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+        animation: shimmer 3s ease-in-out infinite;
+    }
+
+    .node-ai {
+        border-color: #8b5cf6;
+        color: #8b5cf6;
+        animation-delay: 0.5s;
+    }
+
+    .node-action {
+        border-color: #06b6d4;
+        color: #06b6d4;
+        animation-delay: 1s;
+    }
+
+    .node-end {
+        border-color: #10b981;
+        color: #10b981;
+        animation-delay: 1.5s;
+    }
+
+    .connection {
+        width: 40px;
+        height: 3px;
+        background: linear-gradient(90deg, var(--primary-color), transparent);
+        position: relative;
+        animation: flow 2s ease-in-out infinite;
+    }
+
+    .connection::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+        animation: flowPulse 2s ease-in-out infinite;
+    }
+
+    .connection::after {
+        content: '';
+        position: absolute;
+        right: -5px;
+        top: -3px;
+        width: 0;
+        height: 0;
+        border-left: 8px solid var(--primary-color);
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        animation: pulse 2s ease-in-out infinite;
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            padding: 100px 0 40px;
+        }
+
+        .hero-container {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+        }
+
+        .hero-buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-stats {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .hero-visual {
+            height: 300px;
+            order: -1;
+        }
+
+        .floating-card {
+            padding: 0.75rem 1rem;
+            font-size: 0.875rem;
+        }
+
+        .workflow-diagram {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+    }
+
+    @keyframes shimmer {
+        0% {
+            transform: translateX(-100%) translateY(-100%) rotate(45deg);
+        }
+        100% {
+            transform: translateX(100%) translateY(100%) rotate(45deg);
+        }
+    }
+
+    @keyframes flow {
+        0%, 100% {
+            opacity: 0.6;
+            transform: scaleX(1);
+        }
+        50% {
+            opacity: 1;
+            transform: scaleX(1.1);
+        }
+    }
+
+    @keyframes flowPulse {
+        0% {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+    }
+
+    @keyframes iconPulse {
+        0%, 100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+    }
+
+    @keyframes floatCenter {
+        0%, 100% {
+            transform: translateX(-50%) translateY(0px);
+        }
+        25% {
+            transform: translateX(-50%) translateY(-15px);
+        }
+        50% {
+            transform: translateX(-50%) translateY(-25px);
+        }
+        75% {
+            transform: translateX(-50%) translateY(-15px);
+        }
+    }
+</style>

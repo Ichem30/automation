@@ -1,0 +1,1008 @@
+---
+---
+
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Prêt à automatiser vos processus ?</h2>
+                <p>Discutons de votre projet et découvrons ensemble comment l'IA peut transformer votre entreprise.</p>
+                
+                <div class="audit-offer">
+                    <div class="audit-badge">
+                        <i class="fas fa-gift"></i>
+                        <span>OFFRE LIMITÉE</span>
+                    </div>
+                    <h3>Audit Gratuit (valeur 500€)</h3>
+                    <p>Analyse complète + plan d'action personnalisé en 24h</p>
+                </div>
+                <div class="contact-features">
+                    <div class="contact-feature">
+                        <i class="fas fa-calendar-check"></i>
+                        <div>
+                            <h4>Consultation gratuite</h4>
+                            <p>Analysons vos besoins sans engagement</p>
+                        </div>
+                    </div>
+                    <div class="contact-feature">
+                        <i class="fas fa-rocket"></i>
+                        <div>
+                            <h4>Démarrage rapide</h4>
+                            <p>Premiers résultats en 2 semaines</p>
+                        </div>
+                    </div>
+                    <div class="contact-feature">
+                        <i class="fas fa-headset"></i>
+                        <div>
+                            <h4>Support dédié</h4>
+                            <p>Accompagnement personnalisé + garantie 30 jours</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-methods">
+                    <h4>Autres moyens de contact</h4>
+                    <div class="methods-grid">
+                        <a href="mailto:contact@autoflowai.fr" class="method">
+                            <i class="fas fa-envelope"></i>
+                            <span>contact@autoflowai.fr</span>
+                        </a>
+                        <a href="tel:+33123456789" class="method">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 1 23 45 67 89</span>
+                        </a>
+                        <a href="#" class="method">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="#" class="method">
+                            <i class="fab fa-calendly"></i>
+                            <span>Calendly</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="form-header">
+                    <h3>Obtenez votre audit gratuit</h3>
+                    <p>Remplissez ce formulaire pour recevoir votre analyse personnalisée en 24h</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text" id="progressText">Étape 1/4 - Informations de base</span>
+                </div>
+                
+                <form id="contactForm">
+                    <!-- Étape 1: Informations de base -->
+                    <div class="form-step active" data-step="1">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email professionnel *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Entreprise *</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+
+                    <!-- Étape 2: Contexte métier -->
+                    <div class="form-step" data-step="2">
+                        <div class="form-group">
+                            <label for="sector">Secteur d'activité *</label>
+                            <select id="sector" name="sector" required>
+                                <option value="">Sélectionnez votre secteur</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="saas">SaaS / Tech</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="finance">Finance / Banque</option>
+                                <option value="healthcare">Santé</option>
+                                <option value="education">Éducation</option>
+                                <option value="realestate">Immobilier</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="companySize">Taille de l'entreprise *</label>
+                            <select id="companySize" name="companySize" required>
+                                <option value="">Sélectionnez</option>
+                                <option value="1-10">1-10 employés</option>
+                                <option value="11-50">11-50 employés</option>
+                                <option value="51-200">51-200 employés</option>
+                                <option value="200+">200+ employés</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="currentTools">Outils actuels (sélectionnez tous ceux qui s'appliquent)</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="currentTools" value="crm">
+                                    CRM (Salesforce, HubSpot, etc.)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="currentTools" value="email">
+                                    Email (Gmail, Outlook)
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="currentTools" value="slack">
+                                    Slack / Teams
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="currentTools" value="sheets">
+                                    Google Sheets / Excel
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="currentTools" value="shopify">
+                                    Shopify / WooCommerce
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="currentTools" value="other">
+                                    Autre
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Étape 3: Besoins et défis -->
+                    <div class="form-step" data-step="3">
+                        <div class="form-group">
+                            <label for="challenge">Quel est votre plus gros défi actuel ? *</label>
+                            <select id="challenge" name="challenge" required>
+                                <option value="">Sélectionnez votre défi principal</option>
+                                <option value="time">Manque de temps / Tâches répétitives</option>
+                                <option value="data">Gestion des données / Synchronisation</option>
+                                <option value="communication">Communication client / Support</option>
+                                <option value="reporting">Rapports / Analytics</option>
+                                <option value="integration">Intégration d'outils</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="processes">Quels processus souhaitez-vous automatiser ? *</label>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="processes" value="leads">
+                                    Qualification de leads
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="processes" value="support">
+                                    Support client
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="processes" value="content">
+                                    Génération de contenu
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="processes" value="reports">
+                                    Rapports automatisés
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="processes" value="emails">
+                                    Campagnes email
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="processes" value="other">
+                                    Autre
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeLost">Combien d'heures perdez-vous par semaine sur ces tâches ?</label>
+                            <select id="timeLost" name="timeLost">
+                                <option value="">Sélectionnez</option>
+                                <option value="1-5">1-5 heures</option>
+                                <option value="6-15">6-15 heures</option>
+                                <option value="16-30">16-30 heures</option>
+                                <option value="30+">30+ heures</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Étape 4: Budget et timeline -->
+                    <div class="form-step" data-step="4">
+                        <div class="form-group">
+                            <label for="budget">Budget estimé *</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Sélectionnez votre budget</option>
+                                <option value="1k-5k">1 000€ - 5 000€</option>
+                                <option value="5k-10k">5 000€ - 10 000€</option>
+                                <option value="10k-25k">10 000€ - 25 000€</option>
+                                <option value="25k+">25 000€+</option>
+                                <option value="discuss">À discuter</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">Quand souhaitez-vous démarrer ? *</label>
+                            <select id="timeline" name="timeline" required>
+                                <option value="">Sélectionnez</option>
+                                <option value="urgent">Urgent (< 2 semaines)</option>
+                                <option value="normal">Normal (2-4 semaines)</option>
+                                <option value="flexible">Flexible (> 1 mois)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Décrivez brièvement votre projet *</label>
+                            <textarea id="project" name="project" rows="3" placeholder="Décrivez vos besoins spécifiques et vos objectifs..." required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Boutons de navigation -->
+                    <div class="form-navigation">
+                        <button type="button" class="btn btn-secondary" id="prevBtn" style="display: none;">
+                            <i class="fas fa-arrow-left"></i>
+                            Précédent
+                        </button>
+                        <button type="button" class="btn btn-primary" id="nextBtn">
+                            Suivant
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                        <button type="submit" class="btn btn-primary" id="submitBtn" style="display: none;">
+                            <i class="fas fa-gift"></i>
+                            Obtenir mon audit gratuit
+                        </button>
+                    </div>
+
+                    <!-- Éléments de confiance -->
+                    <div class="trust-elements">
+                        <div class="trust-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Vos données sont 100% sécurisées</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Réponse garantie sous 24h</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-ban"></i>
+                            <span>Aucun spam, désinscription facile</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <i class="fas fa-bolt"></i>
+                        <span>AutoFlow<span class="accent">AI</span></span>
+                    </div>
+                    <p>Expert freelance en automatisation IA avec n8n. Transformez vos processus métier avec l'intelligence artificielle.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Workflows IA</a></li>
+                            <li><a href="#services">Automatisation</a></li>
+                            <li><a href="#services">Analytics</a></li>
+                            <li><a href="#services">Consulting</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ressources</h4>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Tutoriels</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:contact@autoflowai.fr">contact@autoflowai.fr</a></li>
+                            <li><a href="tel:+33123456789">+33 1 23 45 67 89</a></li>
+                            <li>Paris, France</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoFlowAI. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+<style>
+    .contact {
+        padding: 80px 0 0;
+        background: var(--bg-secondary);
+    }
+
+    .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .contact-info h2 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        color: var(--text-color);
+        line-height: 1.2;
+    }
+
+    .contact-info p {
+        font-size: 1.125rem;
+        color: var(--text-light);
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
+    }
+
+    .audit-offer {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.25);
+        text-align: center;
+    }
+
+    .audit-offer::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        animation: pulse 3s ease-in-out infinite;
+    }
+
+    .audit-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 255, 255, 0.25);
+        color: white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 2rem;
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .audit-offer h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        position: relative;
+        z-index: 2;
+        color: white;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .audit-offer p {
+        font-size: 0.95rem;
+        color: white;
+        opacity: 0.95;
+        margin: 0;
+        position: relative;
+        z-index: 2;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-features {
+        margin-bottom: 3rem;
+    }
+
+    .contact-feature {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-feature i {
+        width: 50px;
+        height: 50px;
+        background: var(--gradient-1);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        flex-shrink: 0;
+    }
+
+    .contact-feature h4 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+    }
+
+    .contact-feature p {
+        color: var(--text-light);
+        margin: 0;
+    }
+
+    .contact-methods h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+    }
+
+    .methods-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .method {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 1rem;
+        background: white;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+    }
+
+    .method:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-medium);
+        border-color: var(--primary-color);
+    }
+
+    .method i {
+        color: var(--primary-color);
+        font-size: 1.25rem;
+        width: 20px;
+    }
+
+    .contact-form {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 1rem;
+        box-shadow: var(--shadow-medium);
+        border: 1px solid var(--border-color);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .form-header {
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 2px solid var(--bg-secondary);
+    }
+
+    .form-header h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text-color);
+        margin-bottom: 0.5rem;
+    }
+
+    .form-header p {
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 6px;
+        background: var(--bg-secondary);
+        border-radius: 3px;
+        margin-bottom: 0.75rem;
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background: var(--gradient-1);
+        border-radius: 3px;
+        width: 25%;
+        transition: width 0.3s ease;
+    }
+
+    .progress-text {
+        font-size: 0.875rem;
+        color: var(--text-light);
+        font-weight: 500;
+    }
+
+    .form-step {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+
+    .form-step.active {
+        display: block;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateX(20px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    .checkbox-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 0.5rem;
+    }
+
+    .form-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .trust-elements {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        background: var(--bg-secondary);
+        border-radius: 0.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.8rem;
+        color: var(--text-light);
+    }
+
+    .trust-item i {
+        color: var(--primary-color);
+        font-size: 0.9rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 2px solid var(--border-color);
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+        background: white;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: var(--primary-color);
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .checkbox-group {
+        margin-bottom: 2rem;
+    }
+
+    .checkbox-label input[type="checkbox"] {
+        display: none;
+    }
+
+    .checkbox-label {
+        cursor: pointer;
+        user-select: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem 0.75rem;
+        border: 2px solid var(--border-color);
+        border-radius: 1.5rem;
+        background: white;
+        transition: all 0.3s ease;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: var(--text-color);
+        white-space: nowrap;
+        text-align: center;
+    }
+
+    .checkbox-label:hover {
+        border-color: var(--primary-color);
+        background: rgba(59, 130, 246, 0.05);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+    }
+
+    .checkbox-label:has(input[type="checkbox"]:checked) {
+        background: var(--gradient-1);
+        border-color: var(--primary-color);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    }
+
+
+    .btn-full {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 2rem;
+        font-size: 1.125rem;
+    }
+
+    .footer {
+        background: var(--text-color);
+        color: white;
+        padding: 3rem 0 1rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+    }
+
+    .footer-logo i {
+        color: var(--primary-color);
+        font-size: 1.8rem;
+    }
+
+    .footer-brand p {
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .social-links a:hover {
+        background: var(--primary-color);
+        transform: translateY(-2px);
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .footer-column h4 {
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    .footer-column ul {
+        list-style: none;
+    }
+
+    .footer-column li {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-column a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .footer-column a:hover {
+        color: var(--primary-color);
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-bottom p {
+        color: rgba(255, 255, 255, 0.8);
+        margin: 0;
+    }
+
+    .footer-legal {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .footer-legal a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        font-size: 0.875rem;
+        transition: color 0.3s ease;
+    }
+
+    .footer-legal a:hover {
+        color: var(--primary-color);
+    }
+
+    @media (max-width: 768px) {
+        .contact {
+            padding: 60px 0 0;
+        }
+
+        .contact-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+        }
+
+        .methods-grid {
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
+
+        .contact-form {
+            padding: 2rem;
+        }
+
+        .form-row {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .footer-links {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .footer-bottom {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .footer-legal {
+            justify-content: center;
+        }
+
+        .audit-offer {
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .audit-offer h3 {
+            font-size: 1.1rem;
+        }
+
+        .audit-offer p {
+            font-size: 0.9rem;
+        }
+
+        .form-header h3 {
+            font-size: 1.25rem;
+        }
+
+        .form-header p {
+            font-size: 0.9rem;
+        }
+
+        .checkbox-grid {
+            gap: 0.5rem;
+        }
+
+        .form-navigation {
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .trust-elements {
+            flex-direction: column;
+            text-align: center;
+            gap: 0.75rem;
+        }
+
+        .trust-item {
+            justify-content: center;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('contactForm');
+        const steps = document.querySelectorAll('.form-step');
+        const progressFill = document.getElementById('progressFill');
+        const progressText = document.getElementById('progressText');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const submitBtn = document.getElementById('submitBtn');
+        
+        let currentStep = 1;
+        const totalSteps = 4;
+        
+        const stepTitles = [
+            'Étape 1/4 - Informations de base',
+            'Étape 2/4 - Contexte métier',
+            'Étape 3/4 - Besoins et défis',
+            'Étape 4/4 - Budget et timeline'
+        ];
+        
+        function updateProgress() {
+            const progress = (currentStep / totalSteps) * 100;
+            progressFill.style.width = progress + '%';
+            progressText.textContent = stepTitles[currentStep - 1];
+        }
+        
+        function showStep(step) {
+            steps.forEach((s, index) => {
+                s.classList.toggle('active', index + 1 === step);
+            });
+            
+            // Update buttons
+            prevBtn.style.display = step > 1 ? 'flex' : 'none';
+            nextBtn.style.display = step < totalSteps ? 'flex' : 'none';
+            submitBtn.style.display = step === totalSteps ? 'flex' : 'none';
+            
+            updateProgress();
+        }
+        
+        function validateStep(step) {
+            const currentStepElement = document.querySelector(`[data-step="${step}"]`);
+            const requiredFields = currentStepElement.querySelectorAll('[required]');
+            
+            for (let field of requiredFields) {
+                if (!field.value.trim()) {
+                    field.focus();
+                    return false;
+                }
+            }
+            
+            // Validation spéciale pour les checkboxes (optionnelle)
+            if (step === 2) {
+                const checkboxes = currentStepElement.querySelectorAll('input[name="currentTools"]');
+                const checked = Array.from(checkboxes).some(cb => cb.checked);
+                // Rendre cette validation optionnelle pour ne pas bloquer
+                // if (!checked) {
+                //     alert('Veuillez sélectionner au moins un outil actuel.');
+                //     return false;
+                // }
+            }
+            
+            if (step === 3) {
+                // Vérifier les checkboxes de processus
+                const processCheckboxes = document.querySelectorAll('input[name="processes"]');
+                const processChecked = Array.from(processCheckboxes).some(cb => cb.checked);
+                
+                if (!processChecked) {
+                    alert('Veuillez sélectionner au moins un processus à automatiser.');
+                    return false;
+                }
+            }
+            
+            return true;
+        }
+        
+        nextBtn.addEventListener('click', function() {
+            if (validateStep(currentStep)) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        });
+        
+        prevBtn.addEventListener('click', function() {
+            currentStep--;
+            showStep(currentStep);
+        });
+        
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (!validateStep(currentStep)) {
+                return;
+            }
+            
+            // Get form data
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+            
+            // Simulate form submission
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Envoi en cours...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Merci ! Votre audit gratuit sera envoyé sous 24h. Vérifiez vos emails !');
+                form.reset();
+                currentStep = 1;
+                showStep(currentStep);
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+        
+        // Initialize
+        showStep(1);
+    });
+</script>

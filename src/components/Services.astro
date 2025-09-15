@@ -1,0 +1,405 @@
+---
+---
+
+<section id="services" class="services">
+    <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services d'automatisation IA</h2>
+                <p class="section-description">
+                    Des solutions personnalisées pour optimiser vos processus métier avec n8n et l'intelligence artificielle
+                </p>
+            </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Workflows IA Intelligents</h3>
+                <p>Intégration d'IA générative (GPT, Claude) dans vos processus pour automatiser la création de contenu, l'analyse de données et la prise de décision.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Génération de contenu automatisée</li>
+                    <li><i class="fas fa-check"></i> Analyse de sentiment clients</li>
+                    <li><i class="fas fa-check"></i> Classification intelligente</li>
+                </ul>
+                <div class="service-price">
+                    <span class="price">À partir de 2 500€</span>
+                    <span class="price-label">par workflow</span>
+                    <div class="roi-calculator">
+                        <span class="roi-text">Économies significatives vs recrutement</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card featured">
+                <div class="featured-badge">Plus populaire</div>
+                <div class="service-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Automatisation Complète</h3>
+                <p>Création de workflows end-to-end qui connectent tous vos outils (CRM, Email, Slack, bases de données) pour une automatisation totale.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Intégration multi-plateformes</li>
+                    <li><i class="fas fa-check"></i> Synchronisation des données</li>
+                    <li><i class="fas fa-check"></i> Notifications intelligentes</li>
+                </ul>
+                <div class="service-price">
+                    <span class="price">À partir de 4 000€</span>
+                    <span class="price-label">par solution complète</span>
+                    <div class="roi-calculator">
+                        <span class="roi-text">ROI élevé vs recrutement interne</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Analytics & Reporting</h3>
+                <p>Tableaux de bord automatisés et rapports intelligents pour suivre vos KPIs en temps réel et prendre des décisions éclairées.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Dashboards temps réel</li>
+                    <li><i class="fas fa-check"></i> Rapports automatisés</li>
+                    <li><i class="fas fa-check"></i> Alertes personnalisées</li>
+                </ul>
+                <div class="service-price">
+                    <span class="price">À partir de 1 800€</span>
+                    <span class="price-label">par dashboard</span>
+                    <div class="roi-calculator">
+                        <span class="roi-text">Gains de productivité mesurables</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="value-props">
+            <h3 class="value-title">Pourquoi choisir AutoFlowAI ?</h3>
+            <div class="value-grid">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-zap"></i>
+                    </div>
+                    <h4>Déploiement Express</h4>
+                    <p>Première démonstration en 24h, mise en production en 1 semaine maximum</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Garantie Résultats</h4>
+                    <p>ROI garanti sous 60 jours ou remboursement intégral + révision complète offerte</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h4>Stack Technique Expert</h4>
+                    <p>n8n • OpenAI • Claude AI • Vapi • 50+ intégrations API maîtrisées</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>Support Personnalisé</h4>
+                    <p>Formation incluse + support 6 mois + documentation complète</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .services {
+        padding: 80px 0;
+        background: var(--bg-color);
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .service-card {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 1rem;
+        box-shadow: var(--shadow-light);
+        border: 1px solid var(--border-color);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .service-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: var(--gradient-1);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-large);
+    }
+
+    .service-card:hover::before {
+        transform: scaleX(1);
+    }
+
+    .service-card.featured {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        transform: scale(1.05);
+        border: none;
+    }
+
+    .service-card.featured::before {
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .featured-badge {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 1rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        backdrop-filter: blur(10px);
+    }
+
+    .service-icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 1rem;
+        background: var(--gradient-1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: white;
+        font-size: 2rem;
+    }
+
+    .service-card.featured .service-icon {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+    }
+
+    .service-card.featured h3 {
+        color: white;
+    }
+
+    .service-card p {
+        color: var(--text-light);
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .service-card.featured p {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .service-features {
+        list-style: none;
+        margin-bottom: 2rem;
+        flex-grow: 1;
+    }
+
+    .service-features li {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+        color: var(--text-light);
+    }
+
+    .service-card.featured .service-features li {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .service-features i {
+        color: var(--primary-color);
+        font-size: 0.875rem;
+    }
+
+    .service-card.featured .service-features i {
+        color: white;
+    }
+
+    .service-price {
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--border-color);
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .service-card.featured .service-price {
+        border-top-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .price {
+        display: block;
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: var(--primary-color);
+        margin-bottom: 0.25rem;
+    }
+
+    .service-card.featured .price {
+        color: white;
+    }
+
+    .price-label {
+        font-size: 0.875rem;
+        color: var(--text-light);
+    }
+
+    .service-card.featured .price-label {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .roi-calculator {
+        margin-top: 0.75rem;
+        padding: 0.5rem 0.75rem;
+        background: rgba(16, 185, 129, 0.1);
+        border-radius: 0.5rem;
+        border: 1px solid rgba(16, 185, 129, 0.2);
+    }
+
+    .roi-text {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #10b981;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .roi-text::before {
+        content: '💰';
+        font-size: 0.9rem;
+    }
+
+    .service-card.featured .roi-calculator {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .service-card.featured .roi-text {
+        color: white;
+    }
+
+    .value-props {
+        background: var(--bg-secondary);
+        padding: 3rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    .value-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+        color: var(--text-color);
+    }
+
+    .value-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .value-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        background: white;
+        border-radius: 1rem;
+        box-shadow: var(--shadow-light);
+        transition: all 0.3s ease;
+        border: 1px solid var(--border-color);
+    }
+
+    .value-item:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-large);
+        border-color: var(--primary-color);
+    }
+
+    .value-icon {
+        width: 70px;
+        height: 70px;
+        background: var(--gradient-1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    .value-item h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+    }
+
+    .value-item p {
+        color: var(--text-light);
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .services {
+            padding: 60px 0;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .service-card {
+            padding: 2rem;
+        }
+
+        .service-card.featured {
+            transform: none;
+        }
+
+        .value-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .value-props {
+            padding: 2rem;
+        }
+
+        .value-item {
+            padding: 1.5rem;
+        }
+    }
+</style>
