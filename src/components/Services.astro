@@ -22,10 +22,10 @@
                     <li><i class="fas fa-check"></i> Classification intelligente</li>
                 </ul>
                 <div class="service-price">
-                    <span class="price">À partir de 2 500€</span>
+                    <span class="price">À partir de 800€</span>
                     <span class="price-label">par workflow</span>
                     <div class="roi-calculator">
-                        <span class="roi-text">Économies significatives vs recrutement</span>
+                        <span class="roi-text">ROI en 30 jours</span>
                     </div>
                 </div>
             </div>
@@ -42,11 +42,15 @@
                     <li><i class="fas fa-check"></i> Notifications intelligentes</li>
                 </ul>
                 <div class="service-price">
-                    <span class="price">À partir de 4 000€</span>
-                    <span class="price-label">par solution complète</span>
+                    <span class="price">Prix personnalisé</span>
+                    <span class="price-label">selon votre projet</span>
                     <div class="roi-calculator">
-                        <span class="roi-text">ROI élevé vs recrutement interne</span>
+                        <span class="roi-text">ROI optimisé pour vous</span>
                     </div>
+                    <a href="#contact" class="btn btn-primary btn-small">
+                        <i class="fas fa-comments"></i>
+                        Discuter du projet
+                    </a>
                 </div>
             </div>
             <div class="service-card">
@@ -61,10 +65,10 @@
                     <li><i class="fas fa-check"></i> Alertes personnalisées</li>
                 </ul>
                 <div class="service-price">
-                    <span class="price">À partir de 1 800€</span>
+                    <span class="price">À partir de 600€</span>
                     <span class="price-label">par dashboard</span>
                     <div class="roi-calculator">
-                        <span class="roi-text">Gains de productivité mesurables</span>
+                        <span class="roi-text">ROI en 20 jours</span>
                     </div>
                 </div>
             </div>
@@ -296,6 +300,39 @@
     .roi-text::before {
         content: '💰';
         font-size: 0.9rem;
+    }
+
+    .btn-small {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        margin-top: 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        background: var(--gradient-1);
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn-small:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(59, 130, 246, 0.3);
+    }
+
+    .service-card.featured .btn-small {
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .service-card.featured .btn-small:hover {
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
     }
 
     .service-card.featured .roi-calculator {
