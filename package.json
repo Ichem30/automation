@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy": "npm run build && xcopy /E /I /Y dist\\* . && echo. > .nojekyll && git add . && git commit -m \"Deploy to GitHub Pages\" && git push"
+    "deploy": "npm run build && xcopy /E /I /Y dist\\* . && git add . && git commit -m \"Deploy to GitHub Pages\" && git push",
+    "deploy-jekyll": "bundle exec jekyll build && xcopy /E /I /Y _site\\* . && git add . && git commit -m \"Deploy Jekyll to GitHub Pages\" && git push"
   },
   "dependencies": {
     "astro": "^5.13.7"
