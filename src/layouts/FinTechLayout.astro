@@ -1,0 +1,331 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="FinTech Flow - Expert en automatisation IA pour cabinets comptables. Saisie automatique, intégrations Sage/Ciel/EBP, rapports IA. Transformez votre cabinet comptable avec l'intelligence artificielle." />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- SEO Meta Tags -->
+		<meta name="keywords" content="automatisation cabinet comptable, saisie comptable automatique, IA comptabilité, intégration Sage Ciel EBP, rapports comptables IA, fintech comptable, n8n comptabilité, workflow comptable, DossierComptable, Ciel Compta, automatisation factures, relances automatiques, conformité RGPD comptable">
+		<meta name="author" content="FinTech Flow - Expert Automatisation Comptable IA">
+		<meta name="robots" content="index, follow">
+		<link rel="canonical" href="https://fintech.autoflowai.fr">
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://fintech.autoflowai.fr">
+		<meta property="og:title" content={title}>
+		<meta property="og:description" content="FinTech Flow - Expert en automatisation IA pour cabinets comptables. Saisie automatique, intégrations Sage/Ciel/EBP, rapports IA. Transformez votre cabinet comptable.">
+		<meta property="og:site_name" content="FinTech Flow">
+		<meta property="og:locale" content="fr_FR">
+		
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:url" content="https://fintech.autoflowai.fr">
+		<meta name="twitter:title" content={title}>
+		<meta name="twitter:description" content="FinTech Flow - Expert en automatisation IA pour cabinets comptables. Saisie automatique, intégrations Sage/Ciel/EBP, rapports IA.">
+		
+		<!-- Schema.org structured data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "ProfessionalService",
+			"name": "FinTech Flow",
+			"description": "Expert en automatisation IA pour cabinets comptables. Saisie automatique, intégrations Sage/Ciel/EBP, rapports IA, conformité RGPD.",
+			"url": "https://fintech.autoflowai.fr",
+			"telephone": "+33123456789",
+			"email": "contact@fintechflow.fr",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Paris",
+				"addressCountry": "FR"
+			},
+			"serviceType": ["Automatisation Comptable", "Saisie Automatique", "Intégrations Comptables", "Rapports IA", "Conformité RGPD"],
+			"areaServed": "France",
+			"founder": {
+				"@type": "Person",
+				"name": "Expert FinTech Flow"
+			},
+			"hasOfferCatalog": {
+				"@type": "OfferCatalog",
+				"name": "Services FinTech",
+				"itemListElement": [
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Saisie Comptable Automatique",
+							"description": "Automatisation de la saisie des factures et écritures comptables avec IA"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Ecosystème Comptable Connecté",
+							"description": "Intégration de tous les outils comptables dans un workflow automatisé"
+						}
+					},
+					{
+						"@type": "Offer",
+						"itemOffered": {
+							"@type": "Service",
+							"name": "Rapports Financiers IA",
+							"description": "Génération automatique de rapports comptables et analyses financières"
+						}
+					}
+				]
+			}
+		}
+		</script>
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	</head>
+	<body>
+		<slot />
+		<style is:global>
+			:root {
+				--primary-color: #10b981;
+				--primary-dark: #059669;
+				--secondary-color: #047857;
+				--accent-color: #065f46;
+				--text-color: #1f2937;
+				--text-light: #6b7280;
+				--bg-color: #ffffff;
+				--bg-secondary: #f0fdf4;
+				--border-color: #e5e7eb;
+				--gradient-1: linear-gradient(135deg, #10b981 0%, #059669 100%);
+				--gradient-2: linear-gradient(135deg, #059669 0%, #047857 100%);
+				--gradient-3: linear-gradient(135deg, #047857 0%, #065f46 100%);
+				--shadow-light: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+				--shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+				--shadow-large: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+				
+				/* Typography */
+				--font-heading: 'Outfit', sans-serif;
+				--font-body: 'Inter', sans-serif;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-family: var(--font-body);
+				scroll-behavior: smooth;
+			}
+
+			body {
+				color: var(--text-color);
+				background-color: var(--bg-color);
+				line-height: 1.6;
+				overflow-x: hidden;
+			}
+
+			/* Typography Hierarchy */
+			h1, h2, h3, h4, h5, h6 {
+				font-family: var(--font-heading);
+				font-weight: 700;
+				line-height: 1.2;
+				margin-bottom: 1rem;
+			}
+
+			h1 {
+				font-size: 3.5rem;
+				font-weight: 800;
+				letter-spacing: -0.02em;
+			}
+
+			h2 {
+				font-size: 2.5rem;
+				font-weight: 700;
+				letter-spacing: -0.01em;
+			}
+
+			h3 {
+				font-size: 1.75rem;
+				font-weight: 600;
+			}
+
+			h4 {
+				font-size: 1.25rem;
+				font-weight: 600;
+			}
+
+			h5, h6 {
+				font-size: 1.125rem;
+				font-weight: 600;
+			}
+
+			p, span, div, a, li, label, input, textarea, select {
+				font-family: var(--font-body);
+			}
+
+			.section-title {
+				font-family: var(--font-heading);
+				font-weight: 700;
+			}
+
+			.section-description {
+				font-family: var(--font-body);
+			}
+
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 0 2rem;
+			}
+
+			.section-header {
+				text-align: center;
+				margin-bottom: 4rem;
+			}
+
+			.section-title {
+				font-size: 2.5rem;
+				font-weight: 800;
+				margin-bottom: 1rem;
+				background: var(--gradient-1);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			.section-description {
+				font-size: 1.125rem;
+				color: var(--text-light);
+				max-width: 600px;
+				margin: 0 auto;
+			}
+
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				padding: 0.75rem 1.5rem;
+				border: none;
+				border-radius: 0.5rem;
+				font-weight: 600;
+				text-decoration: none;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.btn-primary {
+				background: var(--gradient-1);
+				color: white;
+				box-shadow: var(--shadow-medium);
+			}
+
+			.btn-primary:hover {
+				transform: translateY(-2px);
+				box-shadow: var(--shadow-large);
+			}
+
+			.btn-secondary {
+				background: transparent;
+				color: var(--primary-color);
+				border: 2px solid var(--primary-color);
+			}
+
+			.btn-secondary:hover {
+				background: var(--primary-color);
+				color: white;
+			}
+
+			.gradient-text {
+				background: var(--gradient-1);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+
+			/* Animations */
+			@keyframes fadeInUp {
+				from {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			@keyframes float {
+				0%, 100% {
+					transform: translateY(0px) rotate(0deg);
+				}
+				25% {
+					transform: translateY(-15px) rotate(1deg);
+				}
+				50% {
+					transform: translateY(-25px) rotate(0deg);
+				}
+				75% {
+					transform: translateY(-15px) rotate(-1deg);
+				}
+			}
+
+			@keyframes pulse {
+				0%, 100% {
+					opacity: 1;
+				}
+				50% {
+					opacity: 0.5;
+				}
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.container {
+					padding: 0 1rem;
+				}
+				
+				.section-title {
+					font-size: 2rem;
+				}
+				
+				.section-header {
+					margin-bottom: 2rem;
+				}
+
+				/* Responsive Typography */
+				h1 {
+					font-size: 2.5rem;
+				}
+
+				h2 {
+					font-size: 2rem;
+				}
+
+				h3 {
+					font-size: 1.5rem;
+				}
+
+				h4 {
+					font-size: 1.125rem;
+				}
+			}
+		</style>
+	</body>
+</html>
